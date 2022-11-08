@@ -1,4 +1,4 @@
-chkdsk /f
+sfc /scannow
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser -Force}"
 powershell -command "& {Unblock-File -Path C:\WCUA\cleanUp.ps1}"
 powershell -File C:\WCUA\cleanUp.ps1
