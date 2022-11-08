@@ -14,11 +14,14 @@ del C:\Windows\prefetch\*.*/s /q
 EXIT /B
 
 :wSearchRebuild
+echo "Stopping wsearch..."
 net stop wsearch 
+echo "Deleting Windows.edb so we can re-launch wsearch..."
 del "%ProgramData%\Microsoft\Search\Data\Applications\Windows\Windows.edb"
 EXIT /B
 
 :wsearch
+echo "Starting wsearch..."
 net start wsearch
 EXIT /B
 
