@@ -1,4 +1,6 @@
 sfc /scannow
+DISM.exe /Online /Cleanup-image /Scanhealth && DISM.exe /Online /Cleanup-image /Restorehealth
+sfc /scannow
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser -Force}"
 powershell -command "& {Unblock-File -Path C:\WCUA\cleanUp.ps1}"
 powershell -File C:\WCUA\cleanUp.ps1
