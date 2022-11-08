@@ -1,4 +1,4 @@
-# Windows-Clean-Up-Attempt
+# Windows-Clean-Up-Attempt (WCUA)
 Attempts to speed windows up by removing temp/prefetch files, stops/disables SysMain, resets online sync with OneDrive. 
 
 ## You MUST run this project before the webroot script while under safe mode w/networking in windows.
